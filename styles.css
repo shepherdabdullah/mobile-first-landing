@@ -41,7 +41,7 @@ html {
 
 html, body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
   }
 
 h2 {
@@ -73,6 +73,19 @@ font-family:  'ohio_kraftregular', 'kaushan_scriptregular', 'ryujin_attackregula
    system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.logo-link {
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  font-size: 30px;
+  color: #eb5e28;
+  align-items: center;
+  font-family: 'ryujin_attackregular', 'kaushan_scriptregular', 'ohio_kraftregular', 
+  system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
 .logo {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -82,8 +95,7 @@ font-family:  'ohio_kraftregular', 'kaushan_scriptregular', 'ryujin_attackregula
   align-items: center;
   font-family: 'ryujin_attackregular', 'kaushan_scriptregular', 'ohio_kraftregular', 
   system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold
-;
+  font-weight: bold;
 }
 
 .logo-img {
@@ -250,6 +262,12 @@ transform: rotate(-405deg);
   font-weight: bold;
 }
 
+.button-link {
+  text-decoration: none;
+  color: #FDFFFC;
+  all: unset;
+}
+
 .section1 button, .section2 button {
   font-size: 18px;
   font-weight: bolder;
@@ -291,10 +309,12 @@ transform: rotate(-405deg);
 
 .section1 img {
   border-right: 80px;
+  border: solid rgb(31, 31, 31) 1px;
 }
 
 .section2 img {
   border-left: 80px;
+  border: solid rgb(31, 31, 31) 1px;
 }
 
 /*Testimonials Section*/
@@ -469,7 +489,117 @@ animation: jiggle 0.5s infinite linear;
 }
 
 
+/* Contact Page/Form Styles */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.contact-form-section { background:rgb(31,31,31); }
+
+.manual-contact-section { background:rgb(31,31,31); }
+
+.manual-contact-section h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  color: #ff4800;
+  font-size: 32px;
+  font-family: 'kaushan_scriptregular',
+  system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+.manual-contact-section-inner {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.address, .phone, .email {
+  font-size: 35px;
+  padding-top: 15px;
+  padding-bottom: 55px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.address h3, .phone h3, .email h3 {
+  font-size: 24px;
+  font-family: 'kaushan_scriptregular',
+  system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 10px;
+  color: #FDFFFC;
+}
+
+.fa-home, .fa-phone, .fa-envelope {
+  display: flex;
+  color: #ff4800;
+  padding-right: 10px;
+}
+
+.address-info, .phone-info, .email-info {
+  font-size: 20px;
+  color: #FDFFFC;
+  font-family: 'kaushan_scriptregular',
+  system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: grey;
+}
+
+.contact-form-section h2 {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  color: #ff4800;
+  font-size: 32px;
+  font-family: 'kaushan_scriptregular',
+  system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+form { max-width:420px; margin: 0 auto; }
+
+.feedback-input {
+  color:#fdfffc;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight:500;
+  font-size: 20px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #eb5e28;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #ff4800; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'kaushan_scriptregular',
+  system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;  
+  width: 100%;
+  background:#eb5e28;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#fdfffc;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#ff4800; }
 
 @media (max-width: 1000px) {
 
@@ -569,6 +699,13 @@ animation: jiggle 0.5s infinite linear;
       padding: 10px 25px;
   }    
 
+  .manual-contact-section-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   /*NavBar Media Queries*/
 @media (max-width: 1000px) {
 
@@ -643,4 +780,3 @@ animation: jiggle 0.5s infinite linear;
     font-size: 28px;
   }
 }
-
