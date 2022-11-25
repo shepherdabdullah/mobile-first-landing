@@ -1,3 +1,5 @@
+// Script for Image Gallery LightBox
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
